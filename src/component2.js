@@ -33,4 +33,10 @@ import React , { Component } from 'react';
 // export default UserGreeting;
 
 
-
+export default function BoilingVerdict(props){
+    if(props.celsius >= 100){
+        return <p>water would boil</p>
+    } else {
+        return <p>water would not boil</p>
+    }
+}
